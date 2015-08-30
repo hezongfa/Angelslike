@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lay_bg"
+    android:orientation="vertical" >
+
+    <com.android.angelslike.view.CategoryTopBarView
+        android:id="@+id/categoryTopBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.android.angelslike.view.CategoryTopBarView>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+</LinearLayout>

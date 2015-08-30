@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.angelslike"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lay_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray_bcbcbc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起人"
+                android:textSize="17sp" />
+
+            <com.hzf.widget.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivHead"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/tvT"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_launcher"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivHead"
+                android:layout_toRightOf="@+id/ivHead"
+                android:text="发起人"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="10dp"
+                android:text="开始时间："
+                android:textColor="@color/gray_787878"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvTime1"
+                android:layout_toRightOf="@+id/tvTime1"
+                android:textColor="@color/gray_787878"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSelectPresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/select_present_btn_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" 选 礼 物 "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_bcbcbc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray_bcbcbc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="什么叫凑份子"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="5dp"
+                android:text="一个人先选一份礼物，将价格分成若干份，用微信发给其他熟人，约请每人凑一份子钱，完成购买，送给另一个人。"
+                android:textColor="@color/gray_787878"
+                android:textSize="13sp" />
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:src="@drawable/wcoufenzi"
+	    />
+            <!-- <com.hzf.widget.NoScrollGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2" >
+            </com.hzf.widget.NoScrollGridView> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

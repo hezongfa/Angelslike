@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lay_bg"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="35dp"
+            android:src="@drawable/logo_160" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/gray_bcbcbc"
+            android:orientation="vertical"
+            android:padding="1px" >
+
+            <EditText
+                android:id="@+id/etAccount"
+                style="@style/loginStyle"
+                android:drawableLeft="@drawable/login_account"
+                android:hint="@string/hint_account" />
+
+            <View
+                android:id="@+id/cLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bcbcbc" />
+
+            <EditText
+                android:id="@+id/etPwd"
+                style="@style/loginStyle"
+                android:drawableLeft="@drawable/login_pwd"
+                android:hint="@string/hint_pwd"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/submit_btn_bg"
+            android:text="登 录"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册  |"
+                android:textColor="@color/black_868686"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvFindPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  忘记密码"
+                android:textColor="@color/black_868686"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnWCLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/wechat"
+            android:text="微信登录"
+            android:textColor="@color/black_868686"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</ScrollView>

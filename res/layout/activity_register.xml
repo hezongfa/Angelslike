@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lay_bg"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/gray_bcbcbc"
+            android:orientation="vertical"
+            android:padding="1px" >
+
+            <EditText
+                android:id="@+id/etAccount"
+                style="@style/loginStyle"
+                android:drawableLeft="@drawable/login_account"
+                android:hint="@string/hint_account" />
+
+            <EditText
+                android:id="@+id/etPwd"
+                style="@style/loginStyle"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/login_pwd"
+                android:hint="@string/hint_pwd"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etPwd_c"
+                style="@style/loginStyle"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/login_pwd"
+                android:hint="@string/hint_ver_pwd"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                style="@style/loginStyle"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/login_phone"
+                android:hint="@string/hint_phone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/loginStyle"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/login_account"
+                android:hint="@string/hint_name" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/submit_btn_bg"
+            android:text="注  册"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

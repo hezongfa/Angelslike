@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">天使礼客</string>
+    <string name="hint_account">请输入账号</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="hint_ver_pwd">确认密码</string>
+    <string name="hint_phone">手机号码</string>
+    <string name="hint_name">昵称</string>
+
+</resources>

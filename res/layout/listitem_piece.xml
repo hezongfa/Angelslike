@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lay_bg"
+    android:paddingTop="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/desLay"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/leftLay"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.hzf.widget.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivHead"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_def_bg"
+                app:riv_corner_radius="4dp" />
+
+            <TextView
+                android:id="@+id/tvClubName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/leftLay"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvClubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvClubWhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_454547"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每份："
+                    android:textColor="@color/black_6b6b6b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvEveryPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/orange_f39231"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="元"
+                    android:textColor="@color/black_6b6b6b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvClubOutday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="已结束"
+                    android:textColor="@color/black_6b6b6b"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvClubCopies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black_6b6b6b"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvClubStates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/club_states_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/orange_f39231"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_d7d7d7"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp" >
+
+        <TextView
+            android:id="@+id/tvEditAddr"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="填写收货地址"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_below="@+id/desLay"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar" />
+
+</RelativeLayout>

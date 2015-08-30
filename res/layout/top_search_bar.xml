@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:id="@+id/laySearch"
+    android:background="@color/theme"
+    android:orientation="vertical"
+    android:padding="12dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/btnSearchback"
+        android:background="@drawable/useredit_input_bg"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" >
+
+        <EditText
+            android:id="@+id/etSearchContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/huiche"
+            android:paddingLeft="3dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSearchback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:paddingLeft="12dp"
+        android:text="返回"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
