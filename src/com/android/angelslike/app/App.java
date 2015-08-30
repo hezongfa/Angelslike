@@ -6,7 +6,6 @@ public class App extends com.hzf.app.App {
     public void onCreate() {
         // TODO Auto-generated method stub
         super.onCreate();
-        // afafafafs
     }
     
 }
